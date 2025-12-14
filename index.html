@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>守護神占い</title>
+
+    <!-- Tailwind CSS（CDN使用でOK） -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind カスタム設定 -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              beige: {
+                500: '#b89868',
+              },
+            },
+            fontFamily: {
+              serif: ['"Shippori Mincho"', 'serif'],
+              sans: ['"Zen Maru Gothic"', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <script type="module" crossorigin src="/god/assets/index-BfrrLc_u.js"></script>
+  </head>
+
+  <body class="bg-stone-50 font-sans">
+    <div id="root"></div>
+
+    <!-- ★ Vite の正しいエントリーポイント -->
+  </body>
+</html>
